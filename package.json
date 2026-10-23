@@ -1,0 +1,42 @@
+{
+  "name": "nfl4th-js",
+  "version": "1.0.0",
+  "description": "nfl4th's fourth-down and extra-point models, and the nflfastR models they call, ported to TypeScript for Node.",
+  "license": "MIT",
+  "author": "Zach Ritter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachRit/nfl4th-js.git"
+  },
+  "homepage": "https://github.com/ZachRit/nfl4th-js#readme",
+  "bugs": "https://github.com/ZachRit/nfl4th-js/issues",
+  "keywords": ["nfl", "football", "nfl4th", "nflfastR", "fourth-down", "win-probability", "expected-points"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "models", "NOTICE"],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "22.20.1",
+    "eslint": "10.9.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.68.0",
+    "vitest": "4.1.12"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+dist/
+coverage/
+*.tgz
+# export.R seasons mode output
+seasons/
